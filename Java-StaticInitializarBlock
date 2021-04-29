@@ -1,0 +1,36 @@
+HackerRank java static initializar block problem solution from Md. Asif Imtiyaj Chowdhury.
+
+import java.util.*;
+
+public class Static_I_Block {
+    
+    static Scanner input = new Scanner(System.in);
+    static int breadth = input.nextInt();
+    static int height = input.nextInt();
+    static boolean flag = true;
+    
+    static
+    {
+        try
+        {
+            if (breadth <= 0 || height <= 0)
+            {
+                flag = false;
+                throw new Exception ("Breadth and Height must be positive");
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
+    }
+    
+    public static void main(String[] args) {
+        if(flag)
+        {
+            int area = breadth * height;
+            System.out.println(area);
+        }
+    }
+    
+}
