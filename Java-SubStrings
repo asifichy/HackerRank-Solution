@@ -1,0 +1,21 @@
+HackerRank java problem solution by Md. Asif Imtiyaj Chowdhury.
+
+import java.util.Scanner;
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String s = input.next();
+        
+        int start = input.nextInt();
+        int end = input.nextInt();
+        
+        System.out.println(s.substring(start, end));
+        
+    }
+    
+}
